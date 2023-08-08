@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustache 双大括号</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h2>当前数字：{{message}}</h2>
+
+        <!-- v-text不够灵活，message会永远覆盖标签内不动的内容 -->
+        <h2 v-text="message">当前数字：</h2>
+        <!--v-once只能执行一次数据绑定，不会再被更改  -->
+        <h2 v-once>当前数字：{{message}}</h2>
+        <!-- v-pre使得内容不被解析,原封不动进行显示-->
+        <h2 v-pre>{{message}}</h2>
+        <!-- 双大括号语法中，不仅可以写变量，还可以写简单的表达式 -->
+        <h3>{{firstName+' '+lastName}}</h3>
+        <h3>{{firstName}} {{lastName}}</h3>
+    </div>
+    <script>
+        const app = new Vue({
+            el:'#app',
+            data:{
+                message:0,
+                firstName:'Kobe',
+                lastName:'bryant'
+            }
+        })
+    </script>
+    
+</body>
+</html>

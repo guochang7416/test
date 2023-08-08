@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if-else语句</title>
+    <script>
+        /*
+            if-else语句
+                if(条件表达式){
+                    ...
+                }else{
+                    ...
+                }
+
+            执行顺序：表达式为true，执行if语句；反之执行else语句    
+        */
+            let age = 70;
+
+            if(age >60){
+                alert('你已经退休了')
+            }else{
+                alert('还没退休，继续干！')
+            }
+
+             /*
+            if-else if-else语句
+                if(条件表达式){
+                    ...
+                }else if(条件表达式){
+                    ...
+                }else if(条件表达式){
+                    ...
+                }else if(条件表达式){
+                    ...
+                }else{
+                    ...
+                }
+
+            执行顺序：自上到下依次对if后的条件表达式进行求值判断，
+                        表达式为true，则执行if后的语句，执行完就结束
+                        表达式为false，继续向下判断，直到找到true为止
+                        如所有的表达式都是false，则执行else后的语句。 
+            
+            只会有一个代码块被执行，所以注意条件编写的顺序，或者条件细化。
+                    if(age >= 20 && age<=30){
+                        ...
+                    }
+        */
+        let age01 = 20;
+
+            if(age01 >=100){
+                alert('你真长寿')
+            }else if(age01 >=80){
+                alert('加油继续活')
+            }else if(age01 >=60){
+                alert('可以退休了')
+            }else if(age01 >=30){
+                alert('步入中年')
+            }else if(age01 >=18){
+                alert('成年了')
+            }else{
+                alert('未成年')
+            }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

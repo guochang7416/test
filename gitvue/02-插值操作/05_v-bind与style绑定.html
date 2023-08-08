@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动态绑定样式</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- <h1 :style="{key(属性名);value(属性值)}">{{message}}</h1> -->
+        <h1 :style="{fontSize:'50px'}">{{message}}</h1>
+        <!-- <h1 :style="{'font-size':'50px'}">{{message}}</h1>  属性名书写可以使用驼峰或者加上单引号 -->
+
+        <!-- finalSize当成一个变量使用 -->
+        <h1 :style="{fontSize:finalSize + 'px'}">{{message}}</h1>
+
+
+
+    </div>
+    <script>
+        const app = new Vue({
+            el:'#app',
+            data:{
+                message:'vue体验',
+                finalSize:100
+            }
+        })
+    </script>
+</body>
+</html>

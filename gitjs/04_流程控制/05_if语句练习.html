@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if语句练习</title>
+    <script>
+        /*
+            根据用户输入的成绩，判断可以获得什么奖励
+        */
+       let score = +prompt("请输入成绩：");
+       if(isNaN(score) || score < 0 || score >100){
+            alert("输入有误，请核对")
+       }else if(score == 100){
+            alert("奖励一辆BMW");
+       }else if(score >= 80){
+            alert("奖励一辆iphone");
+       }else if(score >= 1060){
+            alert("奖励一本参考书");
+       }else{
+            alert("无奖励")
+       }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

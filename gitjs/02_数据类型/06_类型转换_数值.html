@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>类型转换_数值</title>
+    <Script>
+        //其他类型转换成数值
+        //用Nmuber（）函数
+            /*
+                转换情况：
+                    字符串：
+                        合法，自动转换对应数字
+                        不合法，转换为NaN
+                        如果是空串或纯空格，转换为0
+                    布尔值：
+                        true,1;false,0;
+                    null转换为0；
+                    undefine转换为NaN        
+            */
+                let a = '123';
+                a = 'abc';//NaN
+                a = '3.1415926';//3.1415926
+                a = '11px';//NaN
+                a = '';//0
+                a = '    ';//0
+                a = 'true';//1
+                a = 'false';//0
+                a = 'null';//0
+                a = 'undefined';//NaN
+                console.log(typeof a , a);
+                a = Number(a);
+                console.log(typeof a , a)
+        //专门将字符串转换为数值
+            /*
+                parseInt()  一个字符串转换为一个整数  解析时会自左向右读取字符串，zhi道读取到字符串前面所有的有效数字   暂时用它去取整
+                parseFloat（）  一个字符串转换为一个浮点数  解析时会自左向右读取字符串，zhi道读取到字符串前面所有的有效小数
+            */       
+                let b = '123';
+                b = '123px';
+                b = '123.45';
+                console.log(typeof b, b);
+                // b = Number(b);
+                // console.log(typeof b, b);//NaN
+                b = parseInt(b);
+                console.log(typeof b, b);//123
+
+        
+    </Script>
+</head>
+<body>
+    
+</body>
+</html>

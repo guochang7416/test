@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组遍历</title>
+    <script>
+        /*
+            遍历数组
+        */
+        //任何类型的数值都可以成为数组元素,但尽量相同
+        const arr = [18,28,38,48,58,68]
+
+        for(let i =0;i<arr.length;i++){
+            console.log(arr[i])
+        }
+        console.log(arr)
+
+        /*
+            练习：
+                1定义一个Person类，类中有两个属性name和age
+                2.创建几个Person对象，将其添加到一个数组里
+                3.遍历数组，打印未成年人信息
+        */
+       class Person{
+            constructor(name,age){
+                this.name = name;
+                this.age = age;
+            }
+       }
+
+       const p1 = new Person('李一帆', 28);
+       const p2 =  new Person('杨晋', 23);
+       const p3 = new Person('郭昌', 16);
+
+       const arr1 = [p1, p2, p3];
+
+       for(let i =0;i<arr1.length;i++){
+            if(arr1[i].age<=18){
+                console.log(arr1[i])
+            }
+            // console.log(arr1[i])          
+       }
+
+       /*
+            for-of用来遍历迭代对象
+
+            语法：
+                for( 变量 of 可迭代的对象){
+                    ...
+                }
+       */
+
+       const arr2 = [18,28,38,48,58,68]
+
+       for(let value of arr2){
+        console.log(value);
+       }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

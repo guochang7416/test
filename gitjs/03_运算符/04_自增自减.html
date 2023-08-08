@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自增自减</title>
+    <script>
+        //自增运算符
+        //不论是a++还是++a，都会使a的值立刻+1；
+        //不同的是两者返回的值不同   a++是自增前的值，旧值；++a是自增后的值
+        let a = 10;
+
+        let b = a++;
+
+        console.log("a++ = ",b);   //10
+        console.log(a);
+
+
+        let n = 15;
+        let result = n++ + ++n + n;
+        console.log(result);
+
+        //自减运算符
+        //不论是a--还是--a，都会使a的值立刻-1；
+        //不同的是两者返回的值不同   a--是自减前的值，旧值；--a是自减后的值
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

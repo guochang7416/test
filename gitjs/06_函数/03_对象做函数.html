@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象做函数</title>
+    <script>
+        function fn(a){
+            // console.log("a = ",a)
+            a.name = "杨晋";
+            console.log(a)
+        }
+
+        const obj = {
+            name:"郭昌",
+            age:"23",
+        }
+
+        //传递的obj里面的值 
+        fn(obj)
+
+        //函数每次调用，都会重新创建，释放掉之前的内存
+        function fn1(b= {name:"杨晋"}){
+            console.log("b = ",b)
+            b.name = "李一帆";
+            console.log("b = ",b)
+        }
+
+        fn1();
+        fn1();
+
+        //对比
+        const obj1 = {
+            name : "杨晋",
+        }
+
+        function fn2(c = obj1){
+            console.log("c = ",c)
+            c.name = "李一帆";
+            console.log("c = ",c)
+        }
+
+        fn2();
+        fn2();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

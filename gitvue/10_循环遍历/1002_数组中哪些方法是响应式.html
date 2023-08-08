@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+            <ul>
+                <li v-for="item in letters" :key="item">{{item}}</li>
+            </ul>
+            <button @click="btnClick">按钮</button>
+        </div>
+        <script>
+            const app = new Vue({
+                el:'#app',
+                data:{
+                    message:'vue体验',
+                    letters:['a','b','c','d','e']
+                },
+                methods:{
+                    btnClick(){
+                        // push方法可以响应式
+                        // this.letters.push('hello');
+
+                        // pop可以  最后删除
+                        // this.letters.pop();
+
+                        // shift可以  开始删除
+                        // this.letters.shift();
+
+                        // unshift可以   起始位置插入
+                        // this.letters.unshift('hello');
+
+                        // splice可以  删除元素/插入元素/替换元素
+                            //删除  第一个参数是起始位置，第二个参数是需要删除的个数
+                            //this.letters.splice(1,2);
+
+                            //替换   第一个参数是起始位置，第二个参数是需要替换的个数，后面跟需要替换的元素
+                            //this.letters.splice(1,2,'gc','zyx');
+
+                            //插入   第一个参数是起始位置，第二个参数是0，后面跟需要插入的元素
+                            //this.letters.splice(1,0,'gc','zyx');
+
+                        // sort可以
+                        // this.letters.sort();
+
+                        // reverse可以  反转
+                        this.letters.reverse();
+
+                        // //通过索引值修改数组中元素  不可以做到响应式
+                        // this.letters[1] = 'bbbbbb'
+                    }
+                }
+            })
+        </script>
+</body>
+</html>

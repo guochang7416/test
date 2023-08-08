@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window对象</title>
+    <script>
+        /*
+            window对象
+                可以直接访问
+                该对象代表的是浏览器窗口，通过此对象可以对浏览器窗口进行各种操作
+                负责存储js内置对象和浏览器的宿主对象 eg：alert string等
+
+                var用来声明变量，不具有块作用域
+                    用var来声明的变量，会作为window对象的属性保存
+                
+                function声明的函数，会作为window对象的方法保存
+
+                局部作用域中，如果没有使用let或者var声明变量，则变量会自动成为window对象的属性（全局变量）
+        */
+       
+        alert(123);
+        window.alert(456);
+
+        window.a = 10;//向window对象中添加的属性会自动变为全局变量
+
+        var b = 20; //window.b =20
+
+        function fn(){
+            alert("我是1111")
+        }
+        fn();  //window.fn()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

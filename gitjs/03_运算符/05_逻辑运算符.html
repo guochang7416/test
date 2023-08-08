@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>与或非</title>
+    <Script>
+        /*
+            !逻辑非 对布尔值进行取反操作，true > false
+                    若不是布尔值进行取反操作，则会先变成布尔值
+
+            类型转换
+                转换为字符串：
+                    显示：String();
+                    隐示：  + ''
+                转换为数值：
+                    显示：Number();
+                    隐示：+
+                转换成布尔值：
+                    显示：Boolean();
+                    隐式：！！a   取反两次        
+        */
+                let a = true;
+                a = 1;
+                a = !a;
+                console.log(a);
+
+                let b = '123';
+                b = !!b;
+                console.log(typeof b, b); //隐式转换
+
+        /*
+            &&逻辑与 ！！！找false！！！！
+            &&左右为true，返回true；其余都是false；
+            找false，找到一个直接返回。     
+        */
+                let result = true && true;//true
+                let result02 = true && false;//false
+
+                true && alert(123);//alert会执行
+                false && alert(456);//alert 不会执行
+
+                console.log(result);
+                console.log(result02);
+
+                //对于非布尔值运算，会先变成布尔值，然后运算，最后返回原值。
+                    // 第一个值为false，则直接返回第一个值；第一个值为true，，返回第二个值。
+                result03 = 1 && 2;//2
+                result03 = 1 && 0;//0  返回第二个值
+                result03 = 0 && NaN;//0   返回第一个值
+                console.log(result03);
+
+        /*
+            ||逻辑或 ！！！找true！！！
+            ||左右两个有true，返回true，否则返回false。       
+        */    
+                true || alert(123);//alert不会执行
+                false || alert(456);//alert 会执行
+                
+                result04 = 1 || 2;//1
+                result04 = 'hello' || NaN;//hello 返回第一个值
+                result04 = NaN || null;//null 返回第二个值
+                console.log(result04);
+
+    </Script>
+</head>
+<body>
+    
+</body>
+</html>

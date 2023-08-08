@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>练习</title>
+    <script>
+        // let re = /1[3-9]\d{9}/g  //手机号判断
+        re = /(1[3-9]\d)\d{4}(\d{4})/g   //中间四位分开判断
+
+        let str = "asdsaf13753750958dfsdabcf17703574397lasdjfh17836595625";
+
+        let result;
+        while((result = re.exec(str))){
+            // console.log(result);
+            console.log(result[0],result[1],result[2]);
+            console.log(result[1] + "****" + result[2]);
+        }
+
+        /*
+            split()  可以根据正则表达式对一个字符串进行拆分
+            search()  可以搜索正则表达式的内容第一次在字符串中出现的位置
+            replace()  根据正则表达式替换字符中的指定内容
+            match()  根据正则表达式匹配字符串中符合要求的内容 
+        */
+
+        let str1 = "a@b@c@d";
+
+        let result1 = str1.split("@");
+
+        str1 = "11abc223adc33afc55"
+        result1 = str1.split(/a[bdf]c/);
+
+        let result2 = str.search("abc")
+        result2 = str.search(/1[3-9]\d{9}/);
+        result2 = str.replace(/1[3-9]\d{9}/g,'哈哈哈');
+        result2 = str.match(/1[3-9]\d{9}/g);   //返回一个数组  但是不会分组取出
+
+        console.log(result1);
+        console.log(result2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
