@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象</title>
+    <script>
+        /*
+                数据类型：
+                    原始值（7）   只能表示简单的数据，无法表示复杂数据，比如一个人的详细信息
+                        1.数值  Number
+                        2.大整数  BigInt
+                        3.字符串  String
+                        4.布尔值  Boolean
+                        5.空值  Null
+                        6.未定义 Undefined
+                        7.符号  Symbol
+                    
+                    对象（塑料袋）  相当于容器，存储不同类型数据(属性)   
+        */
+
+        //创建对象
+            let obj = new Object()
+
+            obj.name = "李一帆";
+            obj.age = '18';
+            obj.gender = "男"
+
+        //修改属性
+            obj.name = "gc";
+
+        //删除属性
+            delete obj.name;
+            
+        //读取属性
+            console.log(obj)
+            console.log(obj.name)
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

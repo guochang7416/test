@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>类型转换_布尔</title>
+    <script>
+    //使用Boolean()进行数据类型转换
+        //除了0和NaN为false，剩下的都是true
+            let a = 1;
+            a = 100;//true
+            a = -1;//true
+            a = Infinity;//true
+
+            a = 0;//false
+            a = NaN;//false
+
+        //字符串   空串 转换为 false，其余皆为true
+            a = 'abc';//true
+            a = 'true';//true
+            a = "   ";//true
+
+            a = '  ';//false
+            a = 'false';
+
+        //null和undefined，都是false
+            a = null;
+            a = undefined;
+            a = true;
+            a = false;
+
+        //对象都会转换为true！！！！    
+
+        console.log(typeof a, a);
+        a = Boolean(a);
+        console.log(typeof a, a);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

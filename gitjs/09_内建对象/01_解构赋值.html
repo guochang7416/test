@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>解构赋值</title>
+    <script>
+        /*
+            解构赋值
+                解构数组时，可以使用...来设置获取多余的元素
+                数组解构用[],对象解构用{}
+        */
+       const arr = ['gc','lyf','gyx','kzl']
+       let a, b, c;
+
+       [a, b, c] = arr;//解构赋值
+       console.log(a, b, c);
+
+       let [d,e,f,g] = ['rd','zyx','yj','xwz'];  //声明的同时进行解构
+       console.log(d,e,f,g);
+
+       [d,e,f,g=g] = [1,2,3];
+       console.log(d,e,f,g);  //没有实参，可以设置之前的默认值
+
+       let [n1, n2, ...n3] = [4,5,6,7];     //解构数组时，可以使用...来设置获取多余的元素
+       console.log(n1,n2,n3);  //n3打印以数组形式返回
+
+       const obj = {name:'gc',age:'18',gender:'男'};
+
+    //    let {name,age,gender} = obj;
+       let {name : h,age : i,gender : j} = obj;  //冒号后面才是真正的变量
+    //    console.log(name,age,gender);
+       console.log(h,i,j);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

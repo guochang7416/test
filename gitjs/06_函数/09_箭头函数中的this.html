@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            箭头函数
+                无参数箭头：（） => 返回值
+                一个参数：a => 返回值
+                多个参数：(a,b,c) => 返回值
+
+                只有一个语句的箭头函数：() => 返回值
+                只返回一个对象的函数：() => ({...})
+                有多条语句的函数：() =>({
+                    ...
+                    return 返回值
+                })
+
+                箭头函数没有自己的this，由外层作用域决定
+                箭头函数的this和调用方式无关
+        */
+
+        function fn(){
+            console.log('fn -->',this)
+        }
+
+        const fn1 = () =>{
+            console.log('fn1 -->',this)
+        }
+
+        // 函数形式调用
+        fn()//window
+        fn1()//window
+
+        const obj = {
+            name:'gc',
+            fn,
+            fn1,//相当于fn:fn  前一个是属性名，后一个是参数值
+            sayHello(){
+                console.log(this.name)
+                
+                // function t(){
+                //     console.log('t -->',this)
+                // }
+                // t()//以函数形式调用，所以是window
+
+                const t2 =() => {
+                    console.log('t2 -->',this)
+                }
+                t2()
+            }
+        }
+
+        obj.fn()  //obj
+        obj.fn1() //window
+
+        obj.sayHello()
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

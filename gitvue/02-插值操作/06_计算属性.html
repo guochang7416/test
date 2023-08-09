@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>{{firstName}}  {{lastName}}</h1>
+        <h2>{{getFullName()}}</h2>
+        <h3>{{Fullname}}</h3>
+
+        <h3>总价格为：{{totalPrice}}</h3>
+    </div>
+    <script>
+        const app = new Vue({
+            el:'#app',
+            data:{
+                firstName:'Tom',
+                lastName:'helln',
+                books:[
+                    {id:001,name:'Unix编程',price:110},
+                    {id:002,name:'java编程',price:120},
+                    {id:003,name:'python编程',price:100},
+                    {id:004,name:'C++编程',price:90},
+                ],
+            },
+            methods:{
+                getFullName(){
+                    return  this.firstName + "  " + this.lastName;
+                }
+            },
+            computed:{
+                Fullname:function(){
+                    return  this.firstName + "  " + this.lastName;
+                },
+
+                totalPrice:function(){
+                    let result = 0;
+                    // for(let i = 0;i<this.books.length;i++){
+                    //     result += this.boosk[i].price;
+                    // }
+                    for(let i of this.books){
+                        result += this.boosk[i].price;
+                    }
+                    return result;
+                }
+            }
+        })
+    </script>
+</body>
+</html>

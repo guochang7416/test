@@ -1,3 +1,14 @@
+<script setup>
+import { computed,ref } from "vue";
+import dayjs from "dayjs";
+let time = ref(dayjs().format('YYYY/M/DD HH:mm:ss'))
+
+setInterval(() => {
+    time.value = dayjs().format('YYYY/M/DD HH:mm:ss')
+}, 1000)
+
+
+</script>
 
 <template>
     <div class="footer">
@@ -5,23 +16,6 @@
         <span style="margin-left: 5px;">{{ time }}</span>
     </div>
 </template>
-
-<script>
-import dayjs from "dayjs";
-export default {
-    data() {
-        return {
-            time: dayjs().format('YYYY/M/DD HH:mm:ss')
-        }
-    },
-    mounted() {
-        setInterval(() => {
-            this.time = dayjs().format('YYYY/M/DD HH:mm:ss')
-        }, 1000)
-    }
-    
-}
-</script>
 
 <style scoped>
 .footer {

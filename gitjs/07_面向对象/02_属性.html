@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            类是创建对象的模板，首要事情就是定义类
+        */
+
+        class Person{
+            //类的代码块，默认就是严格模式（use strict）
+            name = '郭昌' //person的实例属性name
+            age = '23'  //实例属性只能通过实例访问    p1.age  p1,name
+            gender = '男'
+
+            static test = 'test的静态属性' //使用static声明的属性   只能通过Person.test访问
+
+            sayHello(){
+                console.log('大家好，我是' + this.name)//添加实例方法
+            }
+
+            static test(){
+                console.log('你们好，我是')//添加静态方法，类调用
+            }
+
+        }
+
+        const p1 = new Person();
+        const p2 = new Person();
+
+        p1.sayHello();
+
+        console.log(p1)
+        console.log(p2)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

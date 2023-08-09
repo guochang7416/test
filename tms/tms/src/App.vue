@@ -1,3 +1,10 @@
+<script setup>
+import Main from './pages/Main.vue';
+import Aside from './pages/Aside.vue';
+import Header from './pages/Header.vue';
+import Footer from './pages/Footer.vue';
+</script>
+
 <template>
     <el-container style="height:100vh">
       <el-aside width="200px">
@@ -16,21 +23,6 @@
       </el-container>
     </el-container>
 </template>
-
-<script>
-import Main from './pages/Main.vue';
-import Aside from './pages/Aside.vue';
-import Header from './pages/Header.vue';
-import Footer from './pages/Footer.vue';
-export default {
-  components: {
-    Main,
-    Aside,
-    Header,
-    Footer
-  }
-}
-</script>
 
 <style scoped>
 .el-header {

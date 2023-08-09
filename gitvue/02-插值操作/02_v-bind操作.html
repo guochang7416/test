@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-bind</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <img v-bind:src="imgURL" alt="">
+        <a v-bind:href="aHerf">百度一下</a>
+
+        <!-- 语法糖写法 v-bind直接省略 -->
+        <img :src="imgURL" alt="">
+        <a :href="aHerf">百度一下</a>
+    </div>
+    <script>
+        const app = new Vue({
+            el:'#app',
+            data:{
+                imgURL:"https://img14.360buyimg.com/pop/s590x470_jfs/t1/183831/31/35477/58066/64c3193eF7538d314/a860bba2c41633ff.jpg.avif",
+                aHref:'http://www.baidu.com',
+            }
+        })
+    </script>
+    
+</body>
+</html>

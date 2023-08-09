@@ -1,0 +1,326 @@
+{
+  "tableData": [
+    {
+      "account": "0HSETF",
+      "name": "0HSETF",
+      "profitLoss": {
+        "all": "0.00",
+        "straddle": "0.00",
+        "open": "0.00",
+        "shareOption": "-4,446.00"
+      },
+      "bail": {
+        "all": "0.00(0.00%)",
+        "straddle": "0.00(0.00%)",
+        "open": "0.00(0.00%)",
+        "shareOption": "2,900.00(0.03%)"
+      },
+      "storage": {
+        "all": "0.00(0.00%)",
+        "straddle": "0.00(0.00%)",
+        "open": "0.00(0.00%)",
+        "shareOption": "2,900.00(0.03%)"
+      }
+    },
+    {
+      "account": "0HSETF2",
+      "name": "0HSETF",
+      "profitLoss": {
+        "all": "0.00",
+        "straddle": "0.00",
+        "open": "0.00",
+        "shareOption": "-96,353.00"
+      },
+      "bail": {
+        "all": "0.00(0.00%)",
+        "straddle": "0.00(0.00%)",
+        "open": "0.00(0.00%)",
+        "shareOption": "2,900.00(0.03%)"
+      },
+      "storage": {
+        "all": "0.00(0.00%)",
+        "straddle": "0.00(0.00%)",
+        "open": "0.00(0.00%)",
+        "shareOption": "2,900.00(0.03%)"
+      }
+    },
+    {
+      "account": "111",
+      "name": "111",
+      "profitLoss": {
+        "all": "105,150.00",
+        "straddle": "0.00",
+        "open": "105,150.00",
+        "shareOption": "-727.00"
+      },
+      "bail": {
+        "all": "341,212.50(0.29%)",
+        "straddle": "0.00(0.00%)",
+        "open": "341,212.50.00(0.29%)",
+        "shareOption": "2,900.00(0.03%)"
+      },
+      "storage": {
+        "all": "2,276,100.00",
+        "straddle": "0.00",
+        "open": "105,150.00",
+        "shareOption": "-727.00"
+      }
+    },
+    {
+      "account": "1234567980",
+      "name": "xinjian",
+      "profitLoss": {
+        "all": "12,110.00",
+        "straddle": "0.00",
+        "open": "12,110.00",
+        "shareOption": "0.00"
+      },
+      "bail": {
+        "all": "161,407.75(3.23%)",
+        "straddle": "0.00(0.00%)",
+        "open": "161,407.75(3.23%)",
+        "shareOption": "2,900.00(0.03%)"
+      },
+      "storage": {
+        "all": "1,087,845.00",
+        "straddle": "0.00",
+        "open": "12,110.00",
+        "shareOption": "0.00"
+      }
+    },
+    {
+      "account": "123789",
+      "name": "学习风控",
+      "profitLoss": {
+        "all": "26,645.00",
+        "straddle": "0.00",
+        "open": "26,645.00",
+        "shareOption": "-4,446.00"
+      },
+      "bail": {
+        "all": "288,638.25(9.54%)",
+        "straddle": "0.00(0.00%)",
+        "open": "288,638.25(9.54%)",
+        "shareOption": "2,900.00(0.03%)"
+      },
+      "storage": {
+        "all": "1,922,395.00",
+        "straddle": 0,
+        "open": "26,645.00",
+        "shareOption": "-4,446.00"
+      }
+    },
+    {
+      "account": "12700",
+      "name": "12700",
+      "profitLoss": {
+        "all": "-203,730.00",
+        "straddle": "0.00",
+        "open": "-203,730.00",
+        "shareOption": "-18,745.00"
+      },
+      "bail": {
+        "all": "1,116,930.00(64.20%)",
+        "straddle": "0.00(0.00%)",
+        "open": "1,116,930.00(64.20%)",
+        "shareOption": "14,764.50(0.85%)"
+      },
+      "storage": {
+        "all": "7,446,200.00",
+        "straddle": "0.00",
+        "open": "7,446,200.00",
+        "shareOption": "-18,745.00"
+      }
+    },
+    {
+      "account": "12701",
+      "name": "12701",
+      "profitLoss": {
+        "all": "-89,970.00",
+        "straddle": "0.00",
+        "open": "-89,970.00",
+        "shareOption": "-13,960.00"
+      },
+      "bail": {
+        "all": "384,097.50(20.46%)",
+        "straddle": "0.00(0.00%)",
+        "open": "384,097.50(20.46%)",
+        "shareOption": "0.00(0.00%)"
+      },
+      "storage": {
+        "all": "2,559,690.00",
+        "straddle": "0.00",
+        "open": "2,559,690.00",
+        "shareOption": "-13,960.00"
+      }
+    },
+    {
+      "account": "1280",
+      "name": "1280",
+      "profitLoss": {
+        "all": "-107,680.00",
+        "straddle": "0.00",
+        "open": "-107,680.00",
+        "shareOption": "-1,900.00"
+      },
+      "bail": {
+        "all": "847,140.00(8.57%)",
+        "straddle": "0.00(0.00%)",
+        "open": "847,140.00(8.57%)",
+        "shareOption": "2,900.00(0.03%)"
+      },
+      "storage": {
+        "all": "5,647,600.00",
+        "straddle": "0.00",
+        "open": "5,647,600.00",
+        "shareOption": "-4,446.00"
+      }
+    }
+  ],
+  "tableData2": [
+    {
+      "account": "0HSETF",
+      "name": "0HSETF",
+      "kind": "商品",
+      "contract": "2",
+      "duokong": "",
+      "allWare": "100",
+      "available": "50",
+      "todyWare": "45",
+      "todyAvaWare": "45",
+      "aveOpenPrice": "30",
+      "earnSpread": "20",
+      "brush": "10",
+      "value": "5",
+      "earnest": "7",
+      "fundsProp": "2",
+      "chicangjunjia": "8"
+    },
+    {
+      "account": "0HSETF2",
+      "name": "0HSETF2",
+      "kind": "金融",
+      "contract": "3",
+      "duokong": "",
+      "allWare": "200",
+      "available": "100",
+      "todyWare": "50",
+      "todyAvaWare": "25",
+      "aveOpenPrice": "12",
+      "earnSpread": "6",
+      "brush": "5",
+      "value": "4",
+      "earnest": "3",
+      "fundsProp": "5",
+      "chicangjunjia": "1"
+    },
+    {
+      "account": "111",
+      "name": "111",
+      "kind": "能源",
+      "contract": "4",
+      "duokong": "",
+      "allWare": "300",
+      "available": "150",
+      "todyWare": "75",
+      "todyAvaWare": "30",
+      "aveOpenPrice": "15",
+      "earnSpread": "5",
+      "brush": "7",
+      "value": "9",
+      "earnest": "42",
+      "fundsProp": "7",
+      "chicangjunjia": "8"
+    },
+    {
+      "account": "123456",
+      "name": "xinjian",
+      "kind": "化工",
+      "contract": "5",
+      "duokong": "",
+      "allWare": "400",
+      "available": "200",
+      "todyWare": "100",
+      "todyAvaWare": "50",
+      "aveOpenPrice": "25",
+      "earnSpread": "12",
+      "brush": "5",
+      "value": "5",
+      "earnest": "5",
+      "fundsProp": "5",
+      "chicangjunjia": "5"
+    },
+    {
+      "account": "123789",
+      "name": "学习风控",
+      "kind": "农副产品",
+      "contract": "6",
+      "duokong": "",
+      "allWare": "500",
+      "available": "250",
+      "todyWare": "125",
+      "todyAvaWare": "60",
+      "aveOpenPrice": "30",
+      "earnSpread": "15",
+      "brush": "8",
+      "value": "7",
+      "earnest": "6",
+      "fundsProp": "8",
+      "chicangjunjia": "8"
+    },
+    {
+      "account": "1280",
+      "name": "1280",
+      "kind": "农副产品",
+      "contract": "6",
+      "duokong": "",
+      "allWare": "500",
+      "available": "250",
+      "todyWare": "125",
+      "todyAvaWare": "60",
+      "aveOpenPrice": "30",
+      "earnSpread": "15",
+      "brush": "8",
+      "value": "7",
+      "earnest": "6",
+      "fundsProp": "8",
+      "chicangjunjia": "8"
+    },
+    {
+      "account": "0HSETF2",
+      "name": "0HSETF2",
+      "kind": "金融",
+      "contract": "3",
+      "duokong": "",
+      "allWare": "200",
+      "available": "100",
+      "todyWare": "50",
+      "todyAvaWare": "25",
+      "aveOpenPrice": "12",
+      "earnSpread": "6",
+      "brush": "5",
+      "value": "4",
+      "earnest": "3",
+      "fundsProp": "5",
+      "chicangjunjia": "1"
+    },
+    {
+      "account": "111",
+      "name": "111",
+      "kind": "能源",
+      "contract": "4",
+      "duokong": "",
+      "allWare": "300",
+      "available": "150",
+      "todyWare": "75",
+      "todyAvaWare": "30",
+      "aveOpenPrice": "15",
+      "earnSpread": "5",
+      "brush": "7",
+      "value": "9",
+      "earnest": "42",
+      "fundsProp": "7",
+      "chicangjunjia": "8"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while循环</title>
+    <script>
+        /*
+            while语句
+                while(条件表达式){
+                    ...
+                }
+
+            执行流程：
+            对条件表达式进行判断，结果为true，执行循环体，执行完毕，继续判断；
+            直到结果为false，退出循环
+
+            编写循环三要点：
+                1.初始化表达式
+                2.条件表达式
+                3.更新表达式
+        */
+
+        /*
+            do-while循环
+                语法：
+                    do{
+                        ...
+                    }while(条件表达式)
+                    
+            do-while循环保证循环至少执行一次
+        */
+
+        //初始化表达式
+        let a = 0;
+        //条件表达式
+        while(a < 5){
+            alert(a)
+            console.log(a)
+            //更新表达式
+            a++;
+        }
+
+
+        //练习：银行年利率5%，一千块存多少年能到达5000块。
+
+        let money = 1000;
+        let i = 0;
+        while(1){
+            money = money * 1.05;
+            i++;
+            if(money >= 5000){
+                break
+            }
+        }
+        console.log(`需要存${i}年,最终的钱数为${money}元`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
